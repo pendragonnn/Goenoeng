@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Style Start */
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)) ,url('../../image/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navigation {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.navigation .box-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1) h1 {
+  font-size: 38px;
+  color: white;
+} 
+
+.navigation .box-navigation .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all .3s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+  color: greenyellow;
+}
+
+.navigation .box-navigation .box:nth-child(3) i {
+  color: white;
+  display: none;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li i {
+  display: none;
+}
+/* Navbar Style End */
+
+/* Hero Style Start */
+header .hero {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}
+
+header .hero h1 {
+  color: rgba(255, 255, 255);
+  font-size: 42px;
+  text-align: center;
+}
+
+header .hero button {
+  background-color: rgba(0, 0,0, 0.1);
+  border: 1px solid white;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+header .hero button:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0,0, 0.7);
+}
+/* Hero Style End */
+
+/* About Style Start */
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f1f4ee;
+}
+
+.about .box-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .box-about .box:nth-child(1) {
+  padding-right: 30px;
+}
+
+.about .box-about .box:nth-child(1) h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.about .box-about .box:nth-child(1) p {
+  line-height: 2;
+}
+
+.about .box-about .box:nth-child(2) img {
+  border-radius: 12px;
+  width: 600px;
+}
+/* About Style End */
+
+/* Famous Style Start */
+.famous {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #2b2d42;
+}
+
+.famous .box-famous {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.famous .box-famous .box {
+  text-align: center;
+  margin-inline: 20px;
+  color: white;
+}
+
+.famous .box-famous .box img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+/* Famous Style End */
+
+/* Gallery Style Start */
+.gallery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f1f4ee;
+}
+
+.gallery .box-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .box-gallery img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+/* Gallery Style End */
+
+/* Contact Style Start */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2d42;
+}
+
+.contact .box-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .box-contact h1 {
+  font-size: 51px;
+  font-weight: 700;
+  color: white;
+}
+
+.contact .box-contact form table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .box-contact form table tr td label {
+  font-size: 20px;
+  color: white;
+}
+
+.contact .box-contact form table tr td input {
+  padding: 15px 60px 15px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact .box-contact form table tr td textarea {
+  margin-top: 10px;
+  padding: 15px 200px 200px 20px;
+}
+
+/* Contact Style End */
+
+/* Footer Style Start */
+footer {
+  background-color: #f1f4ee;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
+  color: #2b2d42;
+}
+/* Footer Style End */
+
+/* at max-width 1200px */
+@media screen and (max-width: 1200px) {
+  .about .box-about .box:nth-child(2) img {
+    width: 500px;
+  }
+}
+
+/* at max-width 990px */
+@media screen and (max-width: 990px) {
+  .navigation .box-navigation .box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    opacity: 0;
+    padding-right: 0;
+  }
+
+  .navigation .box-navigation .menu-navigation.menu-active {
+    transition: all .3s ease;
+    opacity: 1;
+    top: 100px;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul li {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul li i {
+    display: inline;
+    margin-inline: 10px;
+    font-size: 24px;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul li a {
+    color: black;
+  }
+
+  .navigation .box-navigation .box:nth-child(3) i {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  header .hero h1 {
+    font-size: 34px;
+  }
+
+  .about .box-about {
+    flex-direction: column-reverse;
+  }
+
+  .about .box-about .box:nth-child(1) {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .about .box-about .box:nth-child(2) img {
+    width: 400px;
+  }
+
+  .famous {
+    height: 100%;
+    padding-top: 50px;
+  }
+
+  .famous .box-famous {
+    flex-direction: column;
+  }
+
+  .famous .box-famous .box {
+    margin-bottom: 30px;
+  }
+
+  .famous .box-famous .box img {
+    width: 300px;
+  }
+}
+
+/* at max-width 768px */
+@media screen and (max-width: 768px) {
+  header .hero h1 {
+    font-size: 28px;
+  }
+
+  header .hero button {
+    font-size: 15px;
+  }
+
+  .about .box-about .box:nth-child(1) {
+    padding-right: 0px;
+  }
+
+  .gallery {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .contact {
+    height: 100%;
+    padding: 100px 0;
+  }
+
+  .contact .box-contact {
+    flex-direction: column;
+  }
+
+  .contact .box-contact h1 {
+    margin-bottom: 50px;
+  }
+}
+
+/* at max-width 575px */
+@media screen and (max-width: 575px) {
+  .about .box-about .box:nth-child(1) h1 {
+    font-size: 34px;
+  }
+
+  .about .box-about .box:nth-child(1) p {
+    font-size: 14px;
+  }
+
+  .about .box-about .box:nth-child(2) img {
+    width: 300px;
+  }
+
+  .famous .box-famous .box img {
+    width: 250px;
+  }
+
+  .famous .box-famous .box h1 {
+    font-size: 18px;
+  }
+
+  .famous .box-famous .box p {
+    font-size: 14px;
+  }
+
+  .contact .box-contact form table tr td input {
+    padding: 10px 50px 15px 20px;
+  }
+
+  .contact .box-contact form table tr td textarea {
+    padding: 15px 150px 150px 20px;
+  }
+}
+
+/* at max-width 375px */
+@media screen and (max-width: 375px) {
+  header .hero h1 {
+    font-size: 25px;
+  }
+
+  .about .box-about .box:nth-child(1) h1 {
+    font-size: 28px;
+  }
+
+  .about .box-about .box:nth-child(1) p {
+    font-size: 12px;
+  }
+
+  .about .box-about .box:nth-child(2) img {
+    width: 200px;
+  }
+
+  .famous .box-famous .box img {
+    width: 200px !important;
+  }
+
+  .famous .box-famous h1 {
+    font-size: 16px !important;
+  }
+
+  .famous .box-famous p {
+    font-size: 12px !important;
+  }
+
+  .contact {
+    padding: 120px 0px;
+  }
+
+  .contact .box-contact h1 {
+    font-size: 28px;
+  }
+
+  .contact .box-contact form table tr td input {
+    padding: 10px 40px 15px 20px;
+  }
+
+  .contact .box-contact form table tr td textarea {
+    padding: 15px 100px 150px 20px;
+  }
+}

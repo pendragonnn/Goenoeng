@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goenoeng | Landing Page</title>
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animate Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body id="home">
+  <header>
+    <!-- Navbar Section Start -->
+    <section class="navigation">
+      <div class="container">
+        <div class="box-navigation animate__animated animate__fadeInDown">
+          <div class="box">
+            <h1>Goenoeng</h1>
+          </div>
+          <div class="box menu-navigation">
+            <ul>
+              <li>
+                <i class="ri-home-3-line"></i>
+                <a href="#home">Beranda</a>
+              </li>
+              <li>
+                <i class="ri-information-line"></i>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <i class="ri-star-line"></i>
+                <a href="#famous">Famous</a>
+              </li>
+              <li>
+                <i class="ri-image-line"></i>
+                <a href="#gallery">Galeri</a>
+              </li>
+              <li>
+                <i class="ri-phone-line"></i>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box menu-bar">
+            <i class="ri-menu-3-fill"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Navbar Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+      <h1 class="animate__animated animate__pulse">Bagikan Momen Terindah Anda Bersama Kami! </h1>
+      <button class="button">Bergabung</button>
+    </section>
+    <!-- Hero Section End -->
+  </header>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="box-about">
+        <div class="box" data-aos="fade-right" data-aos-duration="1000">
+          <h1>Tentang Goenoeng</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iure amet eveniet. Excepturi sint facilis aliquid inventore adipisci ducimus, corporis velit dolor vero sunt optio nostrum incidunt temporibus dolore sapiente.</p>
+        </div>
+        <div class="box" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="./image/1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Famous Section Start -->
+  <section class="famous" id="famous">
+    <div class="container">
+      <div class="box-famous">
+        <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+          <img src="./image/everest-famous.jpg" alt="">
+          <h1>Everest Mountain</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit error repellat? Adipisci, omnis? Quis soluta vitae repellat fuga quae?</p>
+        </div>
+        <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+          <img src="./image/fuji-famous.jpg" alt="">
+          <h1>Fuji Mountain</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit error repellat? Adipisci, omnis? Quis soluta vitae repellat fuga quae?</p>
+        </div>
+        <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img src="./image/k2-famous.jpg" alt="">
+          <h1>K2 Mountain</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit error repellat? Adipisci, omnis? Quis soluta vitae repellat fuga quae?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Famous Section End -->
+  
+  <!-- Gallery Section Start -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="box-gallery">
+        <img src="./image/1.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="./image/2.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="./image/3.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+        <img src="./image/4.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="./image/5.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+        <img src="./image/6.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section End -->
+
+  <!-- Contact Section Start -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="box-contact">
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Kontak</h1>
+        <form action="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+          <table>
+            <tr>
+              <td><label for="nama">Nama</label></td>
+              <td><input type="text" name="nama" id="nama" placeholder="Masukan Nama" autocomplete="off"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" name="email" id="email" placeholder="Masukkan Email" autocomplete="off"></td>
+            </tr>
+            <tr>
+              <td><label for="pesan">Pesan</label></td>
+              <td><textarea name="pesan" id="pesan" placeholder="Masukkan Pesan.." autocomplete="off"></textarea></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer Section Start -->
+  <footer>
+    <p>&copy; 2023 by Goenoeng</p>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="./dist/js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
